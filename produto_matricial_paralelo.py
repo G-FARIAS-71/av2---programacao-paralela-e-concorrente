@@ -1,5 +1,5 @@
 import multiprocessing as mp
-import time
+import timeit
 from casos import casos
 
 matriz = list[list]
@@ -28,31 +28,36 @@ def produto_matricial_paralelo(A: matriz, B: matriz, processadores: int = mp.cpu
 
     return resultado_matriz
 
-def testar_caso(A: matriz, B: matriz) -> tuple[matriz, list[float]]:
+def testar_caso(A: matriz, B: matriz, vezes: int = 1) -> tuple[matriz, list[float]]:
     """Executa o produto matricial paralelo e retorna a matriz resultante e tempos de execução"""
     matriz_resultante = None
     tempos = []
     
     # Testar multiplicação paralela com diferentes números de processadores
     for num_processadores in range(1, mp.cpu_count() + 1):
-        inicio_execucao = time.perf_counter()
-        produto = produto_matricial_paralelo(A, B, processadores=num_processadores)
-        fim_execucao = time.perf_counter()
         
+        # Função interna para testar o produto matricial com o número de processadores
+        def teste_produto(): return produto_matricial_paralelo(A, B, processadores=num_processadores)
+        
+        # Medir o tempo usando timeit
+        tempo_execucao = timeit.timeit(teste_produto, number=vezes)  # Executa várias vezes e mede o tempo
+        
+        tempo_execucao /= vezes # pega a média dos tempos
+        
+        # Executa a função de produto matricial para obter a matriz resultante na primeira vez
         if matriz_resultante is None:
-            matriz_resultante = produto
+            matriz_resultante = teste_produto()
             
-        tempo_execucao = fim_execucao - inicio_execucao
         tempos.append(tempo_execucao)
             
     return matriz_resultante, tempos
 
-def exibir_resultados_caso(A: matriz, B: matriz) -> None:
+def exibir_resultados_caso(A: matriz, B: matriz, vezes: int = 1) -> None:
     """Executa um caso de teste e exibe os resultados, incluindo a matriz resultante e tempos"""
     print("Executando o produto matricial...")
     
     # Testar o caso e capturar os resultados
-    matriz_resultante, tempos = testar_caso(A, B)
+    matriz_resultante, tempos = testar_caso(A, B, vezes=vezes)
     
     # Exibir a matriz resultante (ou parte dela se for grande)
     print("Matriz resultante:")
@@ -71,7 +76,7 @@ def main() -> None:
     """Função principal que itera sobre os casos de teste e exibe os resultados"""
     for i, (A, B) in enumerate(casos):
         print(f"\n===== Caso {i+1} =====")
-        exibir_resultados_caso(A, B)
+        exibir_resultados_caso(A, B, vezes=5)
     
 if __name__ == '__main__':
     main()

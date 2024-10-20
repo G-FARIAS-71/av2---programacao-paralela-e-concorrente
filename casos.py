@@ -1,4 +1,4 @@
-import numpy as np
+import random
 
 """
 O propósito desse módulo é meramente armazenar os casos de teste para um módulo de produto matricial com programação paralela
@@ -24,15 +24,10 @@ caso1: caso = (A, A)
 
 # CASO 2
 
-def gerar_matriz(m: int, n: int) -> matriz:
-    '''gerar matriz aleatória de 0s e 1s
-    
-    Condição: para um elemento aij, se i == j, então o elemento certamente será 0'''
-    numpyA: np.ndarray = np.random.randint(2, size=(m, n))
-    np.fill_diagonal(numpyA, 0)
-    return numpyA.tolist()
+m = 300
+n = 300
 
-A = gerar_matriz(500,500)
+A = [[random.randint(0,1) if i != j else 0 for i in range(m)] for j in range(n)] 
 
 caso2: caso = (A,A)
 
