@@ -1,0 +1,142 @@
+===== Caso 1 =====
+Executando o produto matricial...
+Matriz resultante:
+[0, 1, 1, 0, 2]
+[2, 0, 1, 1, 0]
+[0, 2, 0, 1, 1]
+[1, 0, 2, 0, 1]
+[1, 1, 0, 2, 0]
+
+Tempos de execução por número de processadores:
+1 processador(es): 0.1203 segundos
+2 processador(es): 0.1211 segundos
+3 processador(es): 0.1276 segundos
+4 processador(es): 0.1320 segundos
+5 processador(es): 0.1484 segundos
+6 processador(es): 0.1580 segundos
+7 processador(es): 0.1709 segundos
+8 processador(es): 0.1854 segundos
+9 processador(es): 0.2063 segundos
+10 processador(es): 0.2533 segundos
+11 processador(es): 0.2501 segundos
+12 processador(es): 0.2588 segundos
+
+Tempos individuais de execução de processos (em nanossegundos):
+
+Com 1 processador(es): média de 29600 ns
+
+    ['29600 ns']
+
+Com 2 processador(es): média de 14800 ns
+
+    ['18700 ns', '10900 ns']
+
+Com 3 processador(es): média de 11733 ns
+
+    ['18000 ns', '9100 ns', '8100 ns']
+
+Com 4 processador(es): média de 10950 ns
+
+    ['15600 ns', '6700 ns', '14900 ns', '6600 ns']
+
+Com 5 processador(es): média de 8400 ns
+
+    ['14300 ns', '6500 ns', '5800 ns', '9300 ns', '6100 ns']
+
+Com 6 processador(es): média de 8967 ns
+
+    ['14200 ns', '8500 ns', '10000 ns', '5000 ns', '8300 ns', '7800 ns']
+
+Com 7 processador(es): média de 6943 ns
+
+    ['13700 ns', '5700 ns', '8100 ns', '6300 ns', '4300 ns', '5200 ns', '5300 ns']
+
+Com 8 processador(es): média de 9212 ns
+
+    ['19200 ns', '8200 ns', '8300 ns', '7600 ns', '7900 ns', '7800 ns', '7200 ns', '7500 ns']
+
+Com 9 processador(es): média de 9889 ns
+
+    ['17600 ns', '9500 ns', '7400 ns', '6900 ns', '16700 ns', '8000 ns', '9100 ns', '8000 ns', '5800 ns']
+
+Com 10 processador(es): média de 10340 ns
+
+    ['19900 ns', '29000 ns', '9400 ns', '7300 ns', '9600 ns', '6000 ns', '5800 ns', '6000 ns', '5200 ns', '5200 ns']
+
+Com 11 processador(es): média de 8373 ns
+
+    ['29700 ns', '8500 ns', '7400 ns', '7100 ns', '7500 ns', '5500 ns', '5100 ns', '5400 ns', '5300 ns', '5100 ns', '5500 ns']
+
+Com 12 processador(es): média de 8250 ns
+
+    ['21800 ns', '8000 ns', '7500 ns', '7600 ns', '6300 ns', '5600 ns', '5600 ns', '6200 ns', '6300 ns', '7300 ns', '10100 ns', '6700 ns']
+
+
+===== Caso 2 =====
+Executando o produto matricial...
+Matriz resultante:
+Matriz 300x300 (grande demais para exibir completamente)
+
+Tempos de execução por número de processadores:
+1 processador(es): 1.9430 segundos
+2 processador(es): 1.1160 segundos
+3 processador(es): 0.8274 segundos
+4 processador(es): 0.7414 segundos
+5 processador(es): 0.6533 segundos
+6 processador(es): 0.6511 segundos
+7 processador(es): 0.6469 segundos
+8 processador(es): 0.6517 segundos
+9 processador(es): 0.6626 segundos
+10 processador(es): 0.7491 segundos
+11 processador(es): 0.8250 segundos
+12 processador(es): 0.8350 segundos
+
+Tempos individuais de execução de processos (em nanossegundos):
+
+Com 1 processador(es): média de 1852086400 ns
+
+    ['1852086400 ns']
+
+Com 2 processador(es): média de 927592450 ns
+
+    ['920222000 ns', '934962900 ns']
+
+Com 3 processador(es): média de 622971867 ns
+
+    ['610815900 ns', '623458600 ns', '634641100 ns']
+
+Com 4 processador(es): média de 505635900 ns
+
+    ['513077700 ns', '524896500 ns', '490519700 ns', '494049700 ns']
+
+Com 5 processador(es): média de 438495280 ns
+
+    ['411149300 ns', '444675600 ns', '464992600 ns', '456114400 ns', '415544500 ns']
+
+Com 6 processador(es): média de 380848333 ns
+
+    ['367333200 ns', '367130200 ns', '388300700 ns', '392209400 ns', '375258200 ns', '394858300 ns']
+
+Com 7 processador(es): média de 385250543 ns
+
+    ['376167900 ns', '371078000 ns', '395571500 ns', '389781500 ns', '378133400 ns', '387729900 ns', '398291600 ns']
+
+Com 8 processador(es): média de 383850775 ns
+
+    ['383835100 ns', '400306900 ns', '382567700 ns', '386035800 ns', '397963600 ns', '393420500 ns', '369096900 ns', '357579700 ns']      
+
+Com 9 processador(es): média de 388707422 ns
+
+    ['362689900 ns', '343972600 ns', '401565600 ns', '416398500 ns', '413092500 ns', '409280200 ns', '370535400 ns', '383894100 ns', '396938000 ns']
+
+Com 10 processador(es): média de 403226060 ns
+
+    ['395917100 ns', '408000400 ns', '406147000 ns', '420640200 ns', '410110300 ns', '409772600 ns', '386596600 ns', '407524100 ns', '394681700 ns', '392870600 ns']
+
+Com 11 processador(es): média de 425260464 ns
+
+    ['470735900 ns', '426307600 ns', '440100400 ns', '415042700 ns', '426416300 ns', '404992400 ns', '422777400 ns', '408138900 ns', '436106200 ns', '418891300 ns', '408356000 ns']
+
+Com 12 processador(es): média de 406375567 ns
+
+    ['432443300 ns', '405345600 ns', '420761300 ns', '414209500 ns', '385909700 ns', '413833800 ns', '381095400 ns', '420893700 ns', '420559400 ns', '414325700 ns', '379419700 ns', '387709700 ns']
