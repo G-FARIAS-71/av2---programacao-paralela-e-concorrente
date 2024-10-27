@@ -1,5 +1,9 @@
 # <div align="center">Lista de Exercícios - AV2</div>
 
+## <div align="center">Aluno: Guilherme de Farias Loureiro (2214625)</div>
+
+---
+
 Lista de exercícios para composição de notas da AV2 de Computação Paralela e Concorrente.
 
 Esta lista de prática pode ser feita individualmente ou em dupla. Caso sejam detectados trabalhos iguais, os mesmos serão ZERADOS.
