@@ -1,1 +1,3 @@
-numpy==2.1.2
+Sem requerimentos. Se o seu python 3 estiver tendo problemas para executar o código, então atualize-o para a versão mais recente.
+
+No requirements. If your python 3 is having trouble executing the code, then update it to the newest version.
