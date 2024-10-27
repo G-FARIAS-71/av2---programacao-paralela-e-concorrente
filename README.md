@@ -1,6 +1,6 @@
 # <div align="center">Lista de Exercícios - AV2</div>
 
-## <div align="center">Aluno: Guilherme de Farias Loureiro (2214625)</div>
+## <div align="center">Alunos: Guilherme de Farias Loureiro (2214635) e Nilo José Martins Jereissati (2110887)</div>
 
 ---
 
